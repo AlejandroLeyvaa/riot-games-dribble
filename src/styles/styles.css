@@ -1,8 +1,8 @@
 :root {
-  --primary-dark: #1F2326;
-  --primary-light: #F8F8F8;
-  --text-color: #FFFFFF;
-  --background: #FF4656;
+  --primary-dark: #1f2326;
+  --primary-light: #f8f8f8;
+  --text-color: #ffffff;
+  --background: #ff4656;
 }
 
 * {
@@ -24,7 +24,6 @@ body {
   background-size: cover;
 }
 
-
 .Hero {
   background-color: var(--primary-dark);
   width: 100%;
@@ -40,7 +39,8 @@ body {
   grid-template-rows: 100px max-content;
 }
 
-.Hero .Logo-container, .Hero .User-container {
+.Hero .Logo-container,
+.Hero .User-container {
   width: 100%;
   height: 100px;
   display: flex;
@@ -78,7 +78,8 @@ body {
 }
 
 .Hero .Hero-menu-routes {
-  padding: 1.6rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .Hero .Hero-menu-routes a {
@@ -99,10 +100,13 @@ body {
 /* Background pattern */
 
 .Background-pattern {
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   display: block;
   position: fixed;
+  top: 0;
   z-index: -1;
 }
 
@@ -115,12 +119,31 @@ body {
 
 .Story {
   background-color: var(--primary-light);
+  width: 90%;
+  min-width: 320px;
+  max-width: 600px;
   padding: 1rem;
-  margin: 0 1.6rem;
+  margin: 0 auto;
 }
 
 .Story .Story-text-container .head {
-  margin: 0 0 1rem 0;
+  font-size: 2.8rem;
+  margin: 1rem 0;
+}
+
+.Story .Story-text-container .paragraph {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.Story-abilities .Story-abilities-container .head {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.Story-abilities .Story-abilities-container .paragraph {
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 
 .Story .list {
@@ -153,8 +176,18 @@ body {
   color: var(--primary-light);
   width: 100%;
   height: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 1rem 0;
   padding: 1rem;
+}
+
+.Story .Story-abilities-container .Image-container svg {
+  width: 80px;
+  height: 80px;
 }
 
 .Story .Story-abilities-container:nth-child(4) {
@@ -166,6 +199,8 @@ body {
   width: 100%;
   min-width: 320px;
   height: 100px;
+  display: flex;
+  justify-content: center;
   position: absolute;
   z-index: 1000;
 }
@@ -173,13 +208,123 @@ body {
 /* Jett */
 
 .Jett {
-	width: 50%;
-	position: relative;
-	left: 0;
-	bottom: -50px;
+  width: 50%;
+  position: relative;
+  left: 30%;
+  bottom: -50px;
 }
 
 .Jett svg {
-  width: 500px;
+  width: 250px;
   height: 100%;
+}
+
+/* Weapons */
+
+.Weapons {
+  width: 100%;
+  height: 110px;
+  display: -webkit-box;
+  position: relative;
+  top: -30px;
+  overflow-x: scroll;
+}
+
+.Weapons-container {
+  background-color: var(--primary-light);
+  border: 2px solid var(--primary-dark);
+  border-top-left-radius: 10px;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  margin: 0 1rem;
+}
+
+.Weapons-container .container {
+  width: 100%;
+  display: flex;
+}
+
+.Weapons-container .Weapons-texts-container,
+.Weapons-container .Weapons-price-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weapons-container .Weapons-texts-container {
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+
+.Weapons-container .Weapons-texts-container .head {
+  color: #C4C4C4;
+  font-size: 2.4rem;
+}
+
+.Weapons-container .Weapons-texts-container .paragraph {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.Weapons-container .Weapons-price-container {
+  justify-content: flex-end;
+}
+
+.Weapons-container .Weapons-price-container .decoration {
+  background-color: var(--background);
+  color: var(--primary-light);
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 1rem 0;
+}
+
+.head .coin svg {
+	width: 10px;
+	margin: -10px 0;
+}
+
+.Weapons-container .Image-container {
+  position: absolute;
+}
+
+.Weapons-container:nth-child(1) .Image-container {
+  left: 130px;
+  top: 25px;
+}
+
+.Weapons-container:nth-child(2) .Image-container {
+	right: -120px;
+	top: 20px;
+}
+
+.Weapons-container:nth-child(3) .Image-container {
+	left: 665px;
+	top: 15px;
+}
+#rifle {
+  width: 150px;
+}
+
+.Weapons-container .Image-container img {
+  width: 100px;
+}
+
+/* .Weapons-container #rifle {
+  width: 10px;
+} */
+
+.button {
+  background-color: var(--primary-dark);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
