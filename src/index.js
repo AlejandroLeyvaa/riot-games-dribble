@@ -4,8 +4,9 @@ import rifleImg from './assets/rifle.png';
 import smgsImg from './assets/smgs.png';
 import sidearmImg from './assets/sidearm.png';
 
-
 import './styles/styles.css';
+import './styles/tablet.css';
+import './styles/desktop.css';
 
 const imgElement = document.querySelector('#pattern');
 const rifle = document.querySelector('#rifle');

@@ -1,0 +1,237 @@
+:root {
+  --primary-dark: #1f2326;
+  --primary-light: #f8f8f8;
+  --text-color: #ffffff;
+  --background: #ff4656;
+}
+
+@media screen and (min-width: 1280px) {
+  .Hero .Grid {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px;
+  }
+
+  .Hero .Logo-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .Hero .Hero-menu {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 5000;
+  }
+
+  .Hero .Hero-menu-routes {
+    width: revert;
+    margin: 0;
+  }
+
+  .Hero .User-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .Main {
+    margin-bottom: 20rem;
+  }
+
+  .Story {
+    max-width: 50%;
+    margin: 5rem 0 0 10rem;
+    padding: 0;
+  }
+
+  .Story .Story-abilities-container .Image-container svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Story .Story-text-container .head,
+  .Story .Story-text-container .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 3rem;
+    padding-top: 3rem;
+  }
+
+  .Story .Story-text-container .paragraph {
+    font-size: 1rem;
+  }
+
+
+  .Story .Story-text-container .Story-information {
+    flex-direction: row;
+    margin: 2rem 0;
+  }
+
+  .Story .Story-information video {
+    width: 40%;
+  }
+
+
+  .Story .Story-information .Story-text-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+  }
+
+  .Story .Story-text-container .Story-information .head {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Story .Story-information .Story-text-container .list {
+    font-size: 1.2rem;
+    color: #C4C4C4;
+    font-weight: 700;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .Story .Story-information .Story-text-container .list span {
+    color: var(--primary-dark);
+  }
+
+  .Story .Story-information .Story-text-container .Story-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    padding: 0 3rem 0 0;
+  }
+
+  .Story .Story-decoration .decoration:nth-child(1) {
+    width: 8px;
+    height: 20px;
+  }
+
+  .Story .Story-decoration .decoration {
+    width: 8px;
+    height: 20px;
+    margin: 0.5rem 0.5rem;
+  }
+
+  /* Abilities */
+
+  .Story .Story-abilities {
+    flex-wrap: nowrap;
+  }
+
+  .Story .Story-abilities-container {
+    /* width: 25%; */
+    height: 150px;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+    margin: 0;
+  }
+
+  .Story .Story-abilities-container .head,
+  .Story .Story-abilities-container .paragraph {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* .Story .Story-abilities-container .Image-container {
+    grid-column: 1/2;
+  } */
+
+  .Story .Story-abilities-container .Image-container svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Story .Story-abilities-container .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 2rem 0 0 0; */
+  }
+
+  .Story .Story-abilities-container .head {
+    font-size: 1.2rem;
+    /* grid-row: 2/3; */
+  }
+
+
+  .Story .Story-abilities-container .paragraph {
+    font-size: 0.8rem;
+    grid-row: 2/3;
+  }
+
+  /* Jett */
+
+  .Jett {
+    display: block;
+    width: auto;
+    position: fixed;
+    left: 45%;
+    bottom: -7vh;
+  }
+
+  .Jett svg {
+    width: 80%;
+    height: 100%;
+  }
+
+  .Weapons {
+    overflow: revert;
+    top: -100px;
+    padding: 0  0 0 2rem;
+  }
+
+  .Weapons-container {
+    width: 450px;
+    height: 150px;
+  }
+
+  .Weapons-container .Weapons-texts-container .head {
+    font-size: 4.4rem;
+    margin: 0 0 1rem 2rem;
+  }
+
+  .Weapons-container .Weapons-texts-container .paragraph {
+    font-weight: 700;
+    margin: 0 0 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .Weapons-container .Image-container img {
+    width: 200px;
+  }
+
+  .Weapons-container:nth-child(1) .Image-container {
+    left: 205px;
+    top: 30px;
+  }
+
+  .Weapons-container:nth-child(2) .Image-container {
+    left: 690px;
+    top: 20px;
+  }
+
+  .Weapons-container:nth-child(3) .Image-container {
+    left: 1170px;
+    top: 15px;
+  }
+
+  .Footer {
+    position: revert;
+  }
+
+  #rifle {
+    width: 300px;
+  }
+
+}

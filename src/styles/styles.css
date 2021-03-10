@@ -132,6 +132,7 @@ body {
 }
 
 .Story .Story-text-container .paragraph {
+  color: #C4C4C4;
   font-size: 1.6rem;
   margin: 1rem 0;
 }
@@ -146,9 +147,26 @@ body {
   margin: 1rem 0;
 }
 
+.Story .Story-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Story .list {
+  color: #C4C4C4;
+  font-size: 1.6rem;
+  font-weight: 700;
+  list-style: none;
+  margin: 0 auto;
+}
+
+
+.Story .Story-information .Story-text-container .list span {
+  color: var(--primary-dark);
   list-style: none;
 }
+
 
 .Story .Story-decoration {
   width: 100%;
@@ -302,7 +320,7 @@ body {
 }
 
 .Weapons-container:nth-child(2) .Image-container {
-	right: -120px;
+	left: 400px;
 	top: 20px;
 }
 
