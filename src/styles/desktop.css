@@ -42,6 +42,7 @@
 
   .Story {
     max-width: 50%;
+    max-width: 45%;
     margin: 5rem 0 0 10rem;
     padding: 0;
   }
@@ -172,32 +173,42 @@
 
   /* Jett */
 
-  .Jett {
+  /* .Jett {
     display: block;
     width: auto;
     position: fixed;
-    left: 45%;
+    left: 35%;
+    bottom: -7vh;
+  } */
+
+  .Jett {
+    /* display: block; */
+    /* width: auto; */
+    position: fixed;
+    left: revert;
+    right: 10%;
     bottom: -7vh;
   }
 
   .Jett svg {
-    width: 80%;
-    height: 100%;
+    width: 60vw;
+    /* height: 100%; */
   }
 
   .Weapons {
     overflow: revert;
-    top: -100px;
+    top: -60px;
     padding: 0  0 0 2rem;
   }
 
   .Weapons-container {
-    width: 450px;
-    height: 150px;
+    width: 22vw;
+    height: 120px;
+    margin: 0 3rem;
   }
 
   .Weapons-container .Weapons-texts-container .head {
-    font-size: 4.4rem;
+    font-size: 2.5rem;
     margin: 0 0 1rem 2rem;
   }
 
@@ -207,23 +218,37 @@
     font-size: 1.5rem;
   }
 
+  /* .Weapons-container .Image-container img {
+    width: 15vw;
+  } */
+
   .Weapons-container .Image-container img {
-    width: 200px;
+    width: 40%;
   }
 
+  /* .Weapons-container:nth-child(1) .Image-container {
+    left: 14vw;
+    top: 30px;
+  } */
+
   .Weapons-container:nth-child(1) .Image-container {
-    left: 205px;
+    left: 13%;
     top: 30px;
   }
 
+  /* .Weapons-container:nth-child(2) .Image-container {
+    left: 45vw;
+    top: 20px;
+  } */
+
   .Weapons-container:nth-child(2) .Image-container {
-    left: 690px;
+    left: 39%;
     top: 20px;
   }
 
   .Weapons-container:nth-child(3) .Image-container {
-    left: 1170px;
-    top: 15px;
+    left: 68%;
+    top: 25px;
   }
 
   .Footer {
@@ -231,7 +256,25 @@
   }
 
   #rifle {
-    width: 300px;
+    width: 13vw;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .Story {
+    width: 50%;
+  }
+
+  .Jett {
+    position: fixed;
+    left: revert;
+    right: 0%;
+    bottom: -7vh;
+  }
+
+  .Jett svg {
+    width: 40vw;
   }
 
 }
