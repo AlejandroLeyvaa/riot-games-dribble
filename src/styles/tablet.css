@@ -4,6 +4,10 @@
     justify-content: center;
   }
 
+  .Story .list {
+    margin: 0;
+  }
+
   .Story .Story-abilities {
     display: flex;
     flex-direction: row;
