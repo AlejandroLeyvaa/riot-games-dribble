@@ -3,6 +3,7 @@ import background from './assets/background_mobile.png';
 import rifleImg from './assets/rifle.png';
 import smgsImg from './assets/smgs.png';
 import sidearmImg from './assets/sidearm.png';
+import gameplay from './assets/VALORANT_JETT.mp4';
 
 import './styles/styles.css';
 import './styles/tablet.css';
@@ -15,6 +16,7 @@ const sidearm = document.querySelector('#sidearm');
 const body = document.querySelector('body');
 const hero = document.querySelector('.Hero-container');
 const main = document.querySelector('.Main');
+const video = document.querySelector('video');
 const backgroundPatternElement = document.querySelector('.Background-pattern');
 
 const userContainerTemplate = `
@@ -24,16 +26,19 @@ const userContainerTemplate = `
 `;
 
 window.addEventListener('load', insert);
-
-function insert() {
+function insert(e) {
+  console.log(e);
   const userContainer = document.createElement('div');
   userContainer.classList.add('User-container');
   userContainer.innerHTML = userContainerTemplate;
   hero.append(userContainer);
   backgroundPatternElement.style.backgroundImage = `url('${background}')`;
 
+  video.src = gameplay;
   rifle.src = rifleImg;
   smgs.src = smgsImg;
   sidearm.src = sidearmImg;
 };
 
+video.muted = true;
+video.autoplay = true;

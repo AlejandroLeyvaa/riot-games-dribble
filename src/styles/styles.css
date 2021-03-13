@@ -24,6 +24,12 @@ body {
   background-size: cover;
 }
 
+.video-container {
+  width: 40%;
+  position: relative;
+  left: -50px;
+}
+
 .Hero {
   background-color: var(--primary-dark);
   width: 100%;

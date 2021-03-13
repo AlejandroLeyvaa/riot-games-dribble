@@ -54,7 +54,7 @@
 
   .Story .Story-text-container .head,
   .Story .Story-text-container .paragraph {
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin: 0 3rem;
     padding-top: 3rem;
@@ -67,11 +67,12 @@
 
   .Story .Story-text-container .Story-information {
     flex-direction: row;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
   }
 
-  .Story .Story-information video {
-    width: 40%;
+  .Story .Story-information .video-container video {
+    max-width: 100%;
+    display: block;
   }
 
 
@@ -83,6 +84,7 @@
   }
 
   .Story .Story-text-container .Story-information .head {
+    font-size: 2rem;
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 0;
@@ -96,6 +98,11 @@
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
+  .Story .Story-information .Story-text-container .list li {
+    margin: 1rem 0;
+  }
+
 
   .Story .Story-information .Story-text-container .list span {
     color: var(--primary-dark);
