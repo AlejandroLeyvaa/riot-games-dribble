@@ -64,15 +64,9 @@
     font-size: 1rem;
   }
 
-
   .Story .Story-text-container .Story-information {
     flex-direction: row;
     margin: 2rem 0 0 0;
-  }
-
-  .Story .Story-information .video-container video {
-    max-width: 100%;
-    display: block;
   }
 
 
@@ -81,6 +75,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content max-content;
+  }
+
+  .Story .Story-information .video-container {
+    width: 40%;
+    position: relative;
+    left: -50px;
   }
 
   .Story .Story-text-container .Story-information .head {

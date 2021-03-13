@@ -24,10 +24,9 @@ body {
   background-size: cover;
 }
 
-.video-container {
-  width: 40%;
-  position: relative;
-  left: -50px;
+video {
+  max-width: 100%;
+  display: block;
 }
 
 .Hero {
