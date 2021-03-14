@@ -20,8 +20,15 @@
     margin: 5%;
   }
 
+
+  /* Jett */
+
+  .Jett {
+    left: 50%;
+  }
+
   .Weapons {
-    width: 100%;
+    width: 60%;
     height: 110px;
     display: -webkit-box;
     position: relative;

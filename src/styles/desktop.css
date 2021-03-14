@@ -99,15 +99,6 @@
     grid-row: 2/3;
   }
 
-  .Story .Story-information .Story-text-container .list li {
-    margin: 1rem 0;
-  }
-
-
-  .Story .Story-information .Story-text-container .list span {
-    color: var(--primary-dark);
-  }
-
   .Story .Story-information .Story-text-container .Story-decoration {
     display: flex;
     flex-direction: column;
@@ -189,8 +180,6 @@
   } */
 
   .Jett {
-    /* display: block; */
-    /* width: auto; */
     position: fixed;
     left: revert;
     right: 10%;
@@ -199,10 +188,20 @@
 
   .Jett svg {
     width: 40vw;
-    /* height: 100%; */
+  }
+
+  .Jett-name {
+    font-size: 15rem;
+    top: 220px;
+    left: 275px;
+  }
+
+  .Footer {
+    position: revert;
   }
 
   .Weapons {
+    width: 100%;
     overflow: revert;
     top: -60px;
     padding: 0  0 0 2rem;
@@ -258,10 +257,6 @@
     top: 25px;
   }
 
-  .Footer {
-    position: revert;
-  }
-
   #rifle {
     width: 13vw;
   }
@@ -282,6 +277,12 @@
 
   .Jett svg {
     width: 40vw;
+  }
+
+  .Jett .Jett-name {
+    font-size: 20rem;
+    top: 280px;
+    left: 320px;
   }
 
 }

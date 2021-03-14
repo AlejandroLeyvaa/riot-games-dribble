@@ -166,6 +166,14 @@ video {
   margin: 0 auto;
 }
 
+.Story .list li {
+  margin: 1rem 0;
+}
+
+
+.Story .Story-information .Story-text-container .list span {
+  color: var(--primary-dark);
+}
 
 .Story .Story-information .Story-text-container .list span {
   color: var(--primary-dark);
@@ -233,13 +241,24 @@ video {
 .Jett {
   width: 50%;
   position: relative;
-  left: 30%;
+  left: 25%;
   bottom: -50px;
 }
 
 .Jett svg {
   width: 250px;
   height: 100%;
+}
+
+.Jett-name {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--primary-light);
+  font-size: 7rem;
+	position: absolute;
+	top: 110px;
+	left: 135px;
+	z-index: -1;
+	transform: rotate(90deg);
 }
 
 /* Weapons */
@@ -251,6 +270,7 @@ video {
   position: relative;
   top: -30px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .Weapons-container {
@@ -333,6 +353,7 @@ video {
 	left: 665px;
 	top: 15px;
 }
+
 #rifle {
   width: 150px;
 }
@@ -340,10 +361,6 @@ video {
 .Weapons-container .Image-container img {
   width: 100px;
 }
-
-/* .Weapons-container #rifle {
-  width: 10px;
-} */
 
 .button {
   background-color: var(--primary-dark);
